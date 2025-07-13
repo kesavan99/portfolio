@@ -1,0 +1,1 @@
+The src/configuaration folder contains all the data for the portfolio, including details like the resume. The code serves as a skeleton structure, with all dynamic content coming from this configuration.

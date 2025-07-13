@@ -1,0 +1,41 @@
+@import './common.css';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--bg-white);
+  color: var(--text-black);
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.navbar:hover {
+  border-bottom: 3px solid var(--bg-underline);
+}
+
+.logo {
+  color: var(--text-black);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.nav-link {
+  color: var(--text-black);
+  text-decoration: none;
+  font-weight: bold;
+  transition: text-decoration 0.3s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}

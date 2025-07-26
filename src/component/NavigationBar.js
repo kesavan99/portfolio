@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/NavigationBar.css';
-import navbarData  from '../configuaration/data'
+import { navbarData } from '../configuaration/data';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">
+      <Link to="/portfolio" className="logo">
         <h2>{navbarData.title}</h2>
       </Link>
       <ul className="nav-links">
@@ -21,6 +21,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
 
 export default Navbar;

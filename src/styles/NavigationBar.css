@@ -1,19 +1,26 @@
 @import './common.css';
 
+
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding-left: 2rem;
+  padding-right: 4rem;
   background-color: var(--bg-white);
   color: var(--text-black);
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.3s ease;
 }
 
+
 .navbar:hover {
   border-bottom: 3px solid var(--bg-underline);
 }
+
 
 .logo {
   color: var(--text-black);
@@ -22,19 +29,23 @@
   font-weight: bold;
 }
 
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0;
+  padding: 0;
 }
+
 
 .nav-link {
   color: var(--text-black);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   transition: text-decoration 0.3s ease;
 }
+
 
 .nav-link:hover {
   text-decoration: underline;

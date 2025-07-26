@@ -1,4 +1,4 @@
-const navbarData = {
+export const navbarData = {
   title: "Kesavan",
   page: [
     { label: "Blog", href: "/blog" },
@@ -7,4 +7,4 @@ const navbarData = {
   ]
 };
 
-export default navbarData;
+export const subtitleForName = ["Web Developer", "Server Developer", "Mobile App developer", "Designer"];

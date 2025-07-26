@@ -2,4 +2,8 @@
   --bg-white: rgb(247, 247, 247);
   --bg-underline: rgb(219, 214, 214);
   --text-black: black;
+  --text-black: #000;
+  --bg-white: #fff;
+  --bg-underline: #555;
+  --bg-main: #D3D3D3;
 }

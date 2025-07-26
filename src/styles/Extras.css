@@ -1,0 +1,308 @@
+/* Extras Page Styles */
+.extras-page {
+  padding: clamp(2rem, 4vw, 4rem);
+  background: #f7f7f9;
+  min-height: 100vh;
+}
+
+.extras-header {
+  text-align: center;
+  margin-bottom: clamp(3rem, 6vh, 6rem);
+}
+
+.extras-title {
+  font: bold clamp(2.5rem, 5vw, 4rem)/1 var(--font-family, sans-serif);
+  color: rgb(26, 26, 26);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 1rem;
+}
+
+.extras-subtitle {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #646464;
+  margin: 0 auto;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* Extras Container */
+.extras-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Extras Card */
+.extras-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.extras-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Extras Banner */
+.extras-banner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 6;
+  background: linear-gradient(135deg, #1a1a1a, #000000);
+}
+
+.extras-category {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: rgb(26, 26, 26);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font: 600 0.75rem/1 var(--font-family, sans-serif);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/* Extras Content */
+.extras-content {
+  padding: 1.8rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.extras-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.extras-date {
+  font-weight: 600;
+  color: rgb(26, 26, 26);
+}
+
+.extras-status {
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.extras-status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.extras-status.active {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.extras-status.ongoing {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.extras-title-card {
+  font: 700 1.4rem/1.3 var(--font-family, sans-serif);
+  color: rgb(26, 26, 26);
+  margin: 0 0 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.extras-organization {
+  font: 600 1.1rem/1.3 var(--font-family, sans-serif);
+  color: #666;
+  margin: 0 0 1rem;
+}
+
+.extras-description {
+  color: #505050;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Achievements Section */
+.extras-achievements {
+  margin-bottom: 1.5rem;
+}
+
+.extras-achievements h5 {
+  color: rgb(26, 26, 26);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.extras-achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.extras-achievements li {
+  color: #505050;
+  padding: 0.3rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+.extras-achievements li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: rgb(26, 26, 26);
+  font-weight: bold;
+}
+
+/* Skills Section */
+.extras-skills {
+  margin-bottom: 1.5rem;
+}
+
+.extras-skills h5 {
+  color: rgb(26, 26, 26);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: #f0f0f0;
+  color: rgb(26, 26, 26);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgb(26, 26, 26);
+  color: white;
+}
+
+/* Recognition Section */
+.extras-recognition {
+  margin-top: auto;
+}
+
+.recognition-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+}
+
+.recognition-icon {
+  font-size: 1.2rem;
+}
+
+.recognition-text {
+  font-weight: 600;
+  color: #b8860b;
+  font-size: 0.9rem;
+}
+
+/* Color Classes (reuse from existing components) */
+.midnight-black { background: linear-gradient(135deg, #000000, #434343); }
+.deep-navy { background: linear-gradient(135deg, #001f3f, #004080); }
+.charcoal-gray { background: linear-gradient(135deg, #36454f, #708090); }
+.slate-dark { background: linear-gradient(135deg, #2f4f4f, #696969); }
+.twilight-purple { background: linear-gradient(135deg, #4b0082, #8a2be2); }
+.onyx-black { background: linear-gradient(135deg, #0f0f0f, #2c2c2c); }
+.espresso-brown { background: linear-gradient(135deg, #3c2415, #8b4513); }
+.forest-green { background: linear-gradient(135deg, #013220, #228b22); }
+.amethyst-purple { background: linear-gradient(135deg, #663399, #9966cc); }
+.copper-bronze { background: linear-gradient(135deg, #b87333, #cd7f32); }
+.ocean-blue { background: linear-gradient(135deg, #006994, #4682b4); }
+.crimson-red { background: linear-gradient(135deg, #8b0000, #dc143c); }
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .extras-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .extras-page {
+    padding: 1.5rem;
+  }
+
+  .extras-container {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .extras-content {
+    padding: 1.5rem;
+  }
+
+  .extras-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .extras-content {
+    padding: 1.2rem;
+  }
+
+  .extras-title-card {
+    font-size: 1.2rem;
+  }
+
+  .skill-tags {
+    gap: 0.3rem;
+  }
+
+  .skill-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .recognition-badge {
+    padding: 0.6rem 0.8rem;
+  }
+}

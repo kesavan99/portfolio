@@ -6,7 +6,7 @@ import { navbarData } from '../configuaration/data';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <Link to="/portfolio" className="logo">
+      <Link to="/" className="logo">
         <h2>{navbarData.title}</h2>
       </Link>
       <ul className="nav-links">
